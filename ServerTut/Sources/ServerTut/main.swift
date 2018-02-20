@@ -41,7 +41,7 @@ routes.add(method: .get, uri: "/json") { (request, response) in
     returnJSONMessage(message: "Hello, JSON!", response: response)
 }
 
-// nester path (json)
+// nested path (json)
 routes.add(method: .get, uri: "/json/nested") { (request, response) in
     returnJSONMessage(message: "Hello, nested JSON!", response: response)
 }
