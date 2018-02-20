@@ -7,12 +7,19 @@ import PerfectHTTPServer
     Logger.enableLogging(true)
 #endif
 
-
+// MARK: - Setup server
 let server: HTTPServer = HTTPServer()
 server.serverPort = 8181
 server.documentRoot = "webRoot"
 
+// MARK: - Routes
+var routes: Routes = Routes()
+routes.add(method: .get, uri: "/") { (request, response) in
+    response.setBody(string: "Plain text response").completed()
+}
+server.addRoutes(routes)
 
+// MARK: - Start server
 do {
     try server.start()
 }
