@@ -56,6 +56,14 @@ routes.add(method: .get, uri: "/beers/{beer_name}") { (request, response) in
     returnJSONMessage(message: "Info for \(valid_beerName) beer!", response: response)
 }
 
+// post request
+routes.add(method: .post, uri: "/postTest") { (request, response) in
+    guard let valid_name: String = request.param(name: "name") else {
+        response.completed(status: .badRequest)
+        return
+    }
+    returnJSONMessage(message: "Hello, \(valid_name)!", response: response)
+}
 server.addRoutes(routes)
 
 // MARK: - Start server
