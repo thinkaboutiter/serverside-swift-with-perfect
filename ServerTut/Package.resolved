@@ -72,6 +72,15 @@
           "revision": "1846390a47bfe0c5263bb70ba318b2bbe751ac95",
           "version": "3.0.2"
         }
+      },
+      {
+        "package": "SimpleLogger",
+        "repositoryURL": "https://github.com/thinkaboutiter/SimpleLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "a2e658acd2cf2900c5f13ddec86a950c9fb43d4f",
+          "version": "1.2.1"
+        }
       }
     ]
   },
