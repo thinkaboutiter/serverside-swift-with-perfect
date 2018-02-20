@@ -36,7 +36,7 @@ func returnJSONMessage(message: String, response: HTTPResponse) {
     }
 }
 
-// json router
+// json route
 routes.add(method: .get, uri: "/json") { (request, response) in
     returnJSONMessage(message: "Hello, JSON!", response: response)
 }
@@ -44,6 +44,16 @@ routes.add(method: .get, uri: "/json") { (request, response) in
 // nested path (json)
 routes.add(method: .get, uri: "/json/nested") { (request, response) in
     returnJSONMessage(message: "Hello, nested JSON!", response: response)
+}
+
+// parameterized requests
+routes.add(method: .get, uri: "/beers/{beer_name}") { (request, response) in
+    guard let valid_beerName: String = request.urlVariables["beer_name"] else {
+        response.completed(status: .badRequest)
+        return
+    }
+    
+    returnJSONMessage(message: "Info for \(valid_beerName) beer!", response: response)
 }
 
 server.addRoutes(routes)
