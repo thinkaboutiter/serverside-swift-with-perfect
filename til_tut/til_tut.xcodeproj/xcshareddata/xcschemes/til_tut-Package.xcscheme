@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "til::til"
-               BuildableName = "til"
-               BlueprintName = "til"
-               ReferencedContainer = "container:til.xcodeproj">
+               BlueprintIdentifier = "til_tut::til_tut"
+               BuildableName = "til_tut"
+               BlueprintName = "til_tut"
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "PostgresStORM::PostgresStORM"
                BuildableName = "PostgresStORM.framework"
                BlueprintName = "PostgresStORM"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "PerfectLogger::PerfectLogger"
                BuildableName = "PerfectLogger.framework"
                BlueprintName = "PerfectLogger"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -59,7 +59,7 @@
                BlueprintIdentifier = "PerfectCURL::PerfectCURL"
                BuildableName = "PerfectCURL.framework"
                BlueprintName = "PerfectCURL"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -73,7 +73,7 @@
                BlueprintIdentifier = "PerfectXML::PerfectXML"
                BuildableName = "PerfectXML.framework"
                BlueprintName = "PerfectXML"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -87,7 +87,7 @@
                BlueprintIdentifier = "StORM::StORM"
                BuildableName = "StORM.framework"
                BlueprintName = "StORM"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -101,7 +101,7 @@
                BlueprintIdentifier = "PerfectPostgreSQL::PerfectPostgreSQL"
                BuildableName = "PerfectPostgreSQL.framework"
                BlueprintName = "PerfectPostgreSQL"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -115,7 +115,7 @@
                BlueprintIdentifier = "PerfectHTTPServer::PerfectHTTPServer"
                BuildableName = "PerfectHTTPServer.framework"
                BlueprintName = "PerfectHTTPServer"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -129,7 +129,7 @@
                BlueprintIdentifier = "PerfectCZlib::PerfectCZlib"
                BuildableName = "PerfectCZlib.framework"
                BlueprintName = "PerfectCZlib"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -143,7 +143,7 @@
                BlueprintIdentifier = "PerfectHTTP::PerfectHTTP"
                BuildableName = "PerfectHTTP.framework"
                BlueprintName = "PerfectHTTP"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -157,7 +157,7 @@
                BlueprintIdentifier = "PerfectNet::PerfectNet"
                BuildableName = "PerfectNet.framework"
                BlueprintName = "PerfectNet"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -171,7 +171,7 @@
                BlueprintIdentifier = "PerfectCrypto::PerfectCrypto"
                BuildableName = "PerfectCrypto.framework"
                BlueprintName = "PerfectCrypto"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -185,7 +185,7 @@
                BlueprintIdentifier = "COpenSSL::COpenSSL"
                BuildableName = "COpenSSL.framework"
                BlueprintName = "COpenSSL"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -199,7 +199,7 @@
                BlueprintIdentifier = "PerfectThread::PerfectThread"
                BuildableName = "PerfectThread.framework"
                BlueprintName = "PerfectThread"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -213,7 +213,7 @@
                BlueprintIdentifier = "PerfectLib::PerfectLib"
                BuildableName = "PerfectLib.framework"
                BlueprintName = "PerfectLib"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -227,7 +227,7 @@
                BlueprintIdentifier = "PerfectHTTPServer::PerfectCHTTPParser"
                BuildableName = "PerfectCHTTPParser.framework"
                BlueprintName = "PerfectCHTTPParser"
-               ReferencedContainer = "container:til.xcodeproj">
+               ReferencedContainer = "container:til_tut.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -257,10 +257,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "til::til"
-            BuildableName = "til"
-            BlueprintName = "til"
-            ReferencedContainer = "container:til.xcodeproj">
+            BlueprintIdentifier = "til_tut::til_tut"
+            BuildableName = "til_tut"
+            BlueprintName = "til_tut"
+            ReferencedContainer = "container:til_tut.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
