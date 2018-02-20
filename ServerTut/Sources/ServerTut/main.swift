@@ -21,7 +21,9 @@ routes.add(method: .get, uri: "/") { (request, response) in
         .completed()
 }
 
-// json route
+/// JSON helper function
+/// - parameter message: a simple message to put in json response
+/// - parameter response: the response object which we will configure
 func returnJSONMessage(message: String, response: HTTPResponse) {
     do {
         try response.setBody(json: ["message": message])
@@ -34,8 +36,14 @@ func returnJSONMessage(message: String, response: HTTPResponse) {
     }
 }
 
+// json router
 routes.add(method: .get, uri: "/json") { (request, response) in
     returnJSONMessage(message: "Hello, JSON!", response: response)
+}
+
+// nester path (json)
+routes.add(method: .get, uri: "/json/nested") { (request, response) in
+    returnJSONMessage(message: "Hello, nested JSON!", response: response)
 }
 
 server.addRoutes(routes)
