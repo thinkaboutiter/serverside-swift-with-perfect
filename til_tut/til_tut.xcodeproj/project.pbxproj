@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F8C48F7203D734600ED642C /* Acronym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C48F6203D734600ED642C /* Acronym.swift */; };
 		4F8C48FB203D876700ED642C /* AcronymConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C48FA203D876700ED642C /* AcronymConverter.swift */; };
+		4F8C48FD203D87A000ED642C /* BasicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C48FC203D87A000ED642C /* BasicController.swift */; };
 		OBJ_1000 /* tb_dh.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_348 /* tb_dh.c */; };
 		OBJ_1001 /* tb_digest.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_349 /* tb_digest.c */; };
 		OBJ_1002 /* tb_dsa.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_350 /* tb_dsa.c */; };
@@ -849,6 +850,7 @@
 /* Begin PBXFileReference section */
 		4F8C48F6203D734600ED642C /* Acronym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acronym.swift; sourceTree = "<group>"; };
 		4F8C48FA203D876700ED642C /* AcronymConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcronymConverter.swift; sourceTree = "<group>"; };
+		4F8C48FC203D87A000ED642C /* BasicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicController.swift; sourceTree = "<group>"; };
 		"COpenSSL::COpenSSL::Product" /* COpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = COpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* trees.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
 		OBJ_101 /* uncompr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
@@ -2019,6 +2021,7 @@
 				OBJ_8 /* main.swift */,
 				4F8C48F6203D734600ED642C /* Acronym.swift */,
 				4F8C48FA203D876700ED642C /* AcronymConverter.swift */,
+				4F8C48FC203D87A000ED642C /* BasicController.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -2844,6 +2847,7 @@
 			files = (
 				OBJ_511 /* main.swift in Sources */,
 				4F8C48FB203D876700ED642C /* AcronymConverter.swift in Sources */,
+				4F8C48FD203D87A000ED642C /* BasicController.swift in Sources */,
 				4F8C48F7203D734600ED642C /* Acronym.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
