@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FDED0DD203DC01800205EA0 /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDED0DC203DC01800205EA0 /* ShoppingItem.swift */; };
 		OBJ_1000 /* t_.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_346 /* t_.c */; };
 		OBJ_1001 /* tasn_.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_347 /* tasn_.c */; };
 		OBJ_1002 /* tb_asnmth.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_348 /* tb_asnmth.c */; };
@@ -853,6 +854,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FDED0DC203DC01800205EA0 /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
 		"COpenSSL::COpenSSL::Product" /* COpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = COpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"MongoDBStORM::MongoDBStORM::Product" /* MongoDBStORM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MongoDBStORM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_100 /* inflate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
@@ -2020,6 +2022,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* main.swift */,
+				4FDED0DC203DC01800205EA0 /* ShoppingItem.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -2859,6 +2862,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				4FDED0DD203DC01800205EA0 /* ShoppingItem.swift in Sources */,
 				OBJ_513 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
