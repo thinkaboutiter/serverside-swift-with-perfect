@@ -73,7 +73,8 @@ struct AcronymConverter {
  */
     
     static func testAFK() throws -> String {
-        return try newAcronym(withShort: "AFK", long: "Away From Keyboard").jsonEncodedString()
+        _ = try newAcronym(withShort: "AFK", long: "Away From Keyboard")
+        return try all()
     }
     
     static func newAcronym(withShort short: String, long: String) throws -> [String: Any] {
