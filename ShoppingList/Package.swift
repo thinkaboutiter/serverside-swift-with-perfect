@@ -1,5 +1,5 @@
 // Generated automatically by Perfect Assistant Application
-// Date: 2018-02-21 14:25:34 +0000
+// Date: 2018-02-21 14:27:42 +0000
 import PackageDescription
 let package = Package(
 	name: "ShoppingList",
