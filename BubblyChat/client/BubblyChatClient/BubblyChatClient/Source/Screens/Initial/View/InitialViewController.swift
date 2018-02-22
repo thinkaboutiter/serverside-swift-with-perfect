@@ -7,29 +7,57 @@
 //
 
 import UIKit
+import SimpleLogger
 
 class InitialViewController: BaseViewController {
+    
+    // MARK: - Initialization
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        Logger.debug.message("\(String(describing: InitialViewController.self)) deinitialized")
+    }
 
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.continueApplicationFlow()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+// MARK: - Application flow
+extension InitialViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    fileprivate func continueApplicationFlow() {
+        guard let valid_appDelegate: AppDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            Logger.error.message("Unable to obtain \(String(describing: AppDelegate.self)) shared instance")
+            return
+        }
+        
+        guard let valid_vc: LoginViewController = UIViewController.fromStoryboard(withName: AppConstants.StoryboardName.login) else {
+            Logger.error.message("Unable to obtain \(String(describing: LoginViewController.self))")
+            return
+        }
+        
+        let vm: LoginViewModel = LoginViewModel()
+        valid_vc.updateViewModel(vm)
+        let navController: BaseNavigationController = BaseNavigationController(rootViewController: valid_vc)
+        
+        executeAsyncOnMainQueue(afterDelay: 0.5) {
+            valid_appDelegate.switchRootViewController(to: navController)
+        }
     }
-    */
-
 }
