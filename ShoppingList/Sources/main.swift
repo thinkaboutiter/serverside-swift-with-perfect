@@ -8,10 +8,6 @@ import MongoDBStORM
 MongoDBConnection.host = "localhost"
 MongoDBConnection.database = "ShoppingList"
 
-// MARK: - DB schema
-let setupObj: ShoppingItem = ShoppingItem()
-try? setupObj.setup()
-
 // MARK: - Setup server
 let server = HTTPServer()
 server.serverPort = 8080
