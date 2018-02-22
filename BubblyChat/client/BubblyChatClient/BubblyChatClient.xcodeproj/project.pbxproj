@@ -14,6 +14,9 @@
 		4F97EB36203F25D600F0559F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB35203F25D600F0559F /* BaseViewController.swift */; };
 		4F97EB38203F25F100F0559F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB37203F25F100F0559F /* BaseNavigationController.swift */; };
 		4F97EB3B203F260F00F0559F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB3A203F260F00F0559F /* InitialViewController.swift */; };
+		4FA57194203F26F90002F355 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57193203F26F90002F355 /* UIView+Extensions.swift */; };
+		4FA57196203F271B0002F355 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57195203F271B0002F355 /* UIWindow+Extensions.swift */; };
+		4FA57198203F276F0002F355 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57197203F276F0002F355 /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		4F97EB35203F25D600F0559F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4F97EB37203F25F100F0559F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		4F97EB3A203F260F00F0559F /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		4FA57193203F26F90002F355 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		4FA57195203F271B0002F355 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		4FA57197203F276F0002F355 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,9 @@
 		4F97EB2E203F24FE00F0559F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4FA57193203F26F90002F355 /* UIView+Extensions.swift */,
+				4FA57197203F276F0002F355 /* UIViewController+Extensions.swift */,
+				4FA57195203F271B0002F355 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +249,9 @@
 			files = (
 				4F97EB19203F239800F0559F /* AppDelegate.swift in Sources */,
 				4F97EB36203F25D600F0559F /* BaseViewController.swift in Sources */,
+				4FA57194203F26F90002F355 /* UIView+Extensions.swift in Sources */,
+				4FA57198203F276F0002F355 /* UIViewController+Extensions.swift in Sources */,
+				4FA57196203F271B0002F355 /* UIWindow+Extensions.swift in Sources */,
 				4F97EB38203F25F100F0559F /* BaseNavigationController.swift in Sources */,
 				4F97EB3B203F260F00F0559F /* InitialViewController.swift in Sources */,
 			);
