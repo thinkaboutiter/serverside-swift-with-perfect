@@ -17,9 +17,12 @@
 		4FA57194203F26F90002F355 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57193203F26F90002F355 /* UIView+Extensions.swift */; };
 		4FA57196203F271B0002F355 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57195203F271B0002F355 /* UIWindow+Extensions.swift */; };
 		4FA57198203F276F0002F355 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA57197203F276F0002F355 /* UIViewController+Extensions.swift */; };
+		82DAE29C5F2ECDA2E9AC153F /* Pods_BubblyChatClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C022178D8D58EE7EC0EF653 /* Pods_BubblyChatClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0ED60FBD469F24B5F73118C7 /* Pods-BubblyChatClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubblyChatClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient.debug.xcconfig"; sourceTree = "<group>"; };
+		3C022178D8D58EE7EC0EF653 /* Pods_BubblyChatClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BubblyChatClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F97EB15203F239800F0559F /* BubblyChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubblyChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F97EB18203F239800F0559F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F97EB1D203F239800F0559F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		4FA57193203F26F90002F355 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4FA57195203F271B0002F355 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
 		4FA57197203F276F0002F355 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B18111977EBF3BE019EFC4B8 /* Pods-BubblyChatClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubblyChatClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DAE29C5F2ECDA2E9AC153F /* Pods_BubblyChatClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4879DEAA04E7B6102307301D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C022178D8D58EE7EC0EF653 /* Pods_BubblyChatClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F97EB0C203F239800F0559F = {
 			isa = PBXGroup;
 			children = (
 				4F97EB17203F239800F0559F /* BubblyChatClient */,
 				4F97EB16203F239800F0559F /* Products */,
+				7512BE0232391B8573F2690D /* Pods */,
+				4879DEAA04E7B6102307301D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +190,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		7512BE0232391B8573F2690D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ED60FBD469F24B5F73118C7 /* Pods-BubblyChatClient.debug.xcconfig */,
+				B18111977EBF3BE019EFC4B8 /* Pods-BubblyChatClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F97EB27203F239800F0559F /* Build configuration list for PBXNativeTarget "BubblyChatClient" */;
 			buildPhases = (
+				6C96B3D9018452B7FF3D723A /* [CP] Check Pods Manifest.lock */,
 				4F97EB11203F239800F0559F /* Sources */,
 				4F97EB12203F239800F0559F /* Frameworks */,
 				4F97EB13203F239800F0559F /* Resources */,
+				F1F12C3FE7A83CAE61C205F3 /* [CP] Embed Pods Frameworks */,
+				32312AA970A1B48C98D54B86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +268,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32312AA970A1B48C98D54B86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C96B3D9018452B7FF3D723A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BubblyChatClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F12C3FE7A83CAE61C205F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SimpleLogger/SimpleLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimpleLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F97EB11203F239800F0559F /* Sources */ = {
@@ -388,6 +473,7 @@
 		};
 		4F97EB28203F239800F0559F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED60FBD469F24B5F73118C7 /* Pods-BubblyChatClient.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -403,6 +489,7 @@
 		};
 		4F97EB29203F239800F0559F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B18111977EBF3BE019EFC4B8 /* Pods-BubblyChatClient.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
