@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +18,50 @@
                     <view key="view" contentMode="scaleToFill" id="dNp-9w-Itq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAI-ch-lVx" userLabel="keyboard-avoiding-scroll-view" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a name" textAlignment="natural" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bBD-Pc-my7" userLabel="text-field">
+                                        <rect key="frame" x="66" y="313.5" width="243.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="NR2-va-FjJ"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="go"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTl-uv-H8b" userLabel="login-button">
+                                        <rect key="frame" x="122" y="373.5" width="131" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="MTl-uv-H8b" secondAttribute="bottom" constant="40" id="5St-ga-FOJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bBD-Pc-my7" secondAttribute="trailing" priority="750" id="96d-0y-fqz"/>
+                                    <constraint firstItem="MTl-uv-H8b" firstAttribute="width" secondItem="QAI-ch-lVx" secondAttribute="width" multiplier="0.35" id="CYX-nd-e3C"/>
+                                    <constraint firstItem="MTl-uv-H8b" firstAttribute="top" secondItem="bBD-Pc-my7" secondAttribute="bottom" constant="20" id="ClR-Yd-aQm"/>
+                                    <constraint firstItem="bBD-Pc-my7" firstAttribute="centerX" secondItem="QAI-ch-lVx" secondAttribute="centerX" id="hqr-2J-6Em"/>
+                                    <constraint firstItem="bBD-Pc-my7" firstAttribute="centerY" secondItem="QAI-ch-lVx" secondAttribute="centerY" id="nVU-DC-UjD"/>
+                                    <constraint firstItem="MTl-uv-H8b" firstAttribute="centerX" secondItem="QAI-ch-lVx" secondAttribute="centerX" id="sKh-wr-EbJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QAI-ch-lVx" firstAttribute="leading" secondItem="Rqq-Rt-XBe" secondAttribute="leading" id="22Z-Qd-oFf"/>
+                            <constraint firstAttribute="bottom" secondItem="QAI-ch-lVx" secondAttribute="bottom" id="9ug-Vc-Abj"/>
+                            <constraint firstItem="Rqq-Rt-XBe" firstAttribute="trailing" secondItem="QAI-ch-lVx" secondAttribute="trailing" id="EBX-WR-PiZ"/>
+                            <constraint firstItem="QAI-ch-lVx" firstAttribute="top" secondItem="dNp-9w-Itq" secondAttribute="top" id="OiG-5F-OZW"/>
+                            <constraint firstItem="bBD-Pc-my7" firstAttribute="width" secondItem="dNp-9w-Itq" secondAttribute="width" multiplier="0.65" id="XDV-z0-vX1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Rqq-Rt-XBe"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpP-O3-Cap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="270"/>
+            <point key="canvasLocation" x="-82.400000000000006" y="269.41529235382313"/>
         </scene>
     </scenes>
 </document>

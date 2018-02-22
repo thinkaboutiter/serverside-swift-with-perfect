@@ -6,6 +6,7 @@ def obtain_pods
   # Pods
   pod "SimpleLogger", :git => "https://github.com/thinkaboutiter/SimpleLogger.git", :tag => "1.2.1"
   pod 'SnapKit', '~> 4.0'
+  pod 'TPKeyboardAvoiding', '~> 1.3'
   pod 'Starscream', '~> 3.0'
 
 end
