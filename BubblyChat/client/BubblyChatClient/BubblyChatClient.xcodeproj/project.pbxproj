@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4F97EB19203F239800F0559F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB18203F239800F0559F /* AppDelegate.swift */; };
-		4F97EB1B203F239800F0559F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB1A203F239800F0559F /* ViewController.swift */; };
-		4F97EB1E203F239800F0559F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F97EB1C203F239800F0559F /* Main.storyboard */; };
+		4F97EB1E203F239800F0559F /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F97EB1C203F239800F0559F /* Initial.storyboard */; };
 		4F97EB20203F239800F0559F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F97EB1F203F239800F0559F /* Assets.xcassets */; };
 		4F97EB23203F239800F0559F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F97EB21203F239800F0559F /* LaunchScreen.storyboard */; };
+		4F97EB36203F25D600F0559F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB35203F25D600F0559F /* BaseViewController.swift */; };
+		4F97EB38203F25F100F0559F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB37203F25F100F0559F /* BaseNavigationController.swift */; };
+		4F97EB3B203F260F00F0559F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F97EB3A203F260F00F0559F /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4F97EB15203F239800F0559F /* BubblyChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BubblyChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F97EB18203F239800F0559F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F97EB1A203F239800F0559F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4F97EB1D203F239800F0559F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F97EB1D203F239800F0559F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Initial.storyboard; sourceTree = "<group>"; };
 		4F97EB1F203F239800F0559F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F97EB22203F239800F0559F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F97EB24203F239800F0559F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F97EB35203F25D600F0559F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4F97EB37203F25F100F0559F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		4F97EB3A203F260F00F0559F /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,111 @@
 			isa = PBXGroup;
 			children = (
 				4F97EB18203F239800F0559F /* AppDelegate.swift */,
-				4F97EB1A203F239800F0559F /* ViewController.swift */,
-				4F97EB1C203F239800F0559F /* Main.storyboard */,
 				4F97EB1F203F239800F0559F /* Assets.xcassets */,
+				4F97EB2A203F23D500F0559F /* Source */,
+				4F97EB33203F258E00F0559F /* SupportFiles */,
+			);
+			path = BubblyChatClient;
+			sourceTree = "<group>";
+		};
+		4F97EB2A203F23D500F0559F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4F97EB30203F251900F0559F /* Model */,
+				4F97EB2F203F251200F0559F /* Network */,
+				4F97EB2E203F24FE00F0559F /* Extensions */,
+				4F97EB2D203F24F800F0559F /* Utilities */,
+				4F97EB2B203F243600F0559F /* Screens */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4F97EB2B203F243600F0559F /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4F97EB34203F25B700F0559F /* _baseUI */,
+				4F97EB32203F254900F0559F /* Chat */,
+				4F97EB31203F254000F0559F /* Login */,
+				4F97EB2C203F244100F0559F /* Initial */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4F97EB2C203F244100F0559F /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				4F97EB39203F25F700F0559F /* View */,
+				4F97EB1C203F239800F0559F /* Initial.storyboard */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		4F97EB2D203F24F800F0559F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4F97EB2E203F24FE00F0559F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4F97EB2F203F251200F0559F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4F97EB30203F251900F0559F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4F97EB31203F254000F0559F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4F97EB32203F254900F0559F /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		4F97EB33203F258E00F0559F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
 				4F97EB21203F239800F0559F /* LaunchScreen.storyboard */,
 				4F97EB24203F239800F0559F /* Info.plist */,
 			);
-			path = BubblyChatClient;
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		4F97EB34203F25B700F0559F /* _baseUI */ = {
+			isa = PBXGroup;
+			children = (
+				4F97EB35203F25D600F0559F /* BaseViewController.swift */,
+				4F97EB37203F25F100F0559F /* BaseNavigationController.swift */,
+			);
+			path = _baseUI;
+			sourceTree = "<group>";
+		};
+		4F97EB39203F25F700F0559F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F97EB3A203F260F00F0559F /* InitialViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +227,7 @@
 			files = (
 				4F97EB23203F239800F0559F /* LaunchScreen.storyboard in Resources */,
 				4F97EB20203F239800F0559F /* Assets.xcassets in Resources */,
-				4F97EB1E203F239800F0559F /* Main.storyboard in Resources */,
+				4F97EB1E203F239800F0559F /* Initial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,20 +238,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F97EB1B203F239800F0559F /* ViewController.swift in Sources */,
 				4F97EB19203F239800F0559F /* AppDelegate.swift in Sources */,
+				4F97EB36203F25D600F0559F /* BaseViewController.swift in Sources */,
+				4F97EB38203F25F100F0559F /* BaseNavigationController.swift in Sources */,
+				4F97EB3B203F260F00F0559F /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4F97EB1C203F239800F0559F /* Main.storyboard */ = {
+		4F97EB1C203F239800F0559F /* Initial.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4F97EB1D203F239800F0559F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Initial.storyboard;
 			sourceTree = "<group>";
 		};
 		4F97EB21203F239800F0559F /* LaunchScreen.storyboard */ = {
