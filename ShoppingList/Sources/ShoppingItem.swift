@@ -60,25 +60,28 @@ class ShoppingItem: MongoDBStORM {
 extension ShoppingItem {
     
     static func create(withJSONRequest json: String?) throws -> String {
-        guard
-            let json = json,
-            let dict = try json.jsonDecode() as? [String: Any],
-            let name: String = dict["name"] as? String,
-            let quantity: UInt64 = dict["quantity"] as? UInt64,
-            let isBought: Bool = dict["isBought"] as? Bool
-            else {
-                return "Invalid parameters"
+        guard let valid_jsonString: String = json else {
+            return "Invalid JSON string"
         }
-        return try create(withName: name, quantity: quantity, isBought: isBought).jsonEncodedString()
+        guard let valid_dict: [String: Any] = try valid_jsonString.jsonDecode() as? [String: Any] else {
+            return "Unable to convert JSON string to Dictionary"
+        }
+        guard let valid_name: String = valid_dict["name"] as? String else {
+            return "Unable to obtain `name`"
+        }
+        guard let valid_quantity: Int = valid_dict["quantity"] as? Int else {
+            return "Unable to obtain `quantity`"
+        }
+        guard let valid_isBought: Bool = valid_dict["isBought"] as? Bool else {
+            return "Unable to obtain `isBought`"
+        }
+        
+        return try create(withName: valid_name, quantity: UInt64(valid_quantity), isBought: valid_isBought).jsonEncodedString()
     }
     
     static func create(withName name: String, quantity: UInt64, isBought: Bool) throws -> [String: Any] {
         let shoppingItem: ShoppingItem = ShoppingItem()
-        let newID: String = shoppingItem.newUUID()
-        
-        debugPrint("🔧 \(#file) » \(#function) » \(#line)", "newObjectID", newID, separator: "\n")
-        
-        shoppingItem.id = newID
+        shoppingItem.id = shoppingItem.newObjectId()
         shoppingItem.name = name
         shoppingItem.quantity = quantity
         shoppingItem.isBought = isBought
