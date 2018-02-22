@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import SimpleLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.configure_3rdParties()
         return true
     }
 
@@ -40,7 +41,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+// MARK: - Root ViewController switching
+extension AppDelegate {
+    
+    func switchRootViewController(to newViewController: UIViewController, animated: Bool = true) {
+        self.window?.replaceRootViewController(with: newViewController, animated: animated)
+    }
+}
+
+// MARK: - Configurations
+extension AppDelegate {
+    
+    fileprivate func configure_3rdParties() {
+        self.configure_simpleLogger()
+    }
+    
+    fileprivate func configure_simpleLogger() {
+        #if DEBUG
+            Logger.enableLogging(true)
+        #endif
+    }
+}
