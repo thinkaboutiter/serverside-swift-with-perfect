@@ -16,11 +16,14 @@ class ShoppingItem: MongoDBStORM {
     var quantity: UInt64 = 0
     var isBought: Bool = false
     
-    override var _collection: String {
-        return "ShoppingItem"
-    }
-    
     // MARK: - Initiailization
+    override init() {
+        super.init()
+        
+        // since `_collection` is not declared as `open` in the `MongoDBStorm` package
+        // we can not override it, so we update its value here!
+        self._collection = "ShoppingItem"
+    }
     convenience init(name: String, quantity: UInt64, isBought: Bool) {
         self.init()
         self.name = name
