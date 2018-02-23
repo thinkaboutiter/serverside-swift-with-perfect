@@ -158,6 +158,7 @@
 		4F97EB30203F251900F0559F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4FA571F320402BFF0002F355 /* Protobuf */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +220,13 @@
 				4FA571A6203F2C210002F355 /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FA571F320402BFF0002F355 /* Protobuf */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protobuf;
 			sourceTree = "<group>";
 		};
 		7512BE0232391B8573F2690D /* Pods */ = {
