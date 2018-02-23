@@ -8,5 +8,7 @@ let package = Package(
 		.Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", majorVersion: 3),
 		.Package(url: "https://github.com/PerfectlySoft/Perfect-WebSockets.git", majorVersion: 3),
 		.Package(url: "https://github.com/SwiftORM/MongoDB-StORM.git", majorVersion: 3),
+        .Package(url: "https://github.com/apple/swift-protobuf.git", majorVersion: 1),
+        .Package(url: "https://github.com/thinkaboutiter/SimpleLogger.git", majorVersion: 1)
 	]
 )

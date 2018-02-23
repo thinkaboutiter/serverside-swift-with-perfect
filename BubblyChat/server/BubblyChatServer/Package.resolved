@@ -137,12 +137,30 @@
         }
       },
       {
+        "package": "SimpleLogger",
+        "repositoryURL": "https://github.com/thinkaboutiter/SimpleLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "a2e658acd2cf2900c5f13ddec86a950c9fb43d4f",
+          "version": "1.2.1"
+        }
+      },
+      {
         "package": "StORM",
         "repositoryURL": "https://github.com/SwiftORM/StORM.git",
         "state": {
           "branch": null,
           "revision": "54741705b76744bb83b8e43cd2bd4804e7f5bed1",
           "version": "3.0.3"
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "state": {
+          "branch": null,
+          "revision": "9dea0a4e64f9c3eb73db3308e7302f45cd8380b2",
+          "version": "1.0.2"
         }
       },
       {
