@@ -23,6 +23,7 @@
 		4FA571A4203F2BE00002F355 /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA571A3203F2BE00002F355 /* AppUtilities.swift */; };
 		4FA571A7203F2C210002F355 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA571A6203F2C210002F355 /* LoginViewModel.swift */; };
 		4FA571F520402CD10002F355 /* ChatMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA571F420402CD10002F355 /* ChatMessage.pb.swift */; };
+		4FA571F820402DF50002F355 /* ChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA571F720402DF50002F355 /* ChatManager.swift */; };
 		82DAE29C5F2ECDA2E9AC153F /* Pods_BubblyChatClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C022178D8D58EE7EC0EF653 /* Pods_BubblyChatClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		4FA571A3203F2BE00002F355 /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
 		4FA571A6203F2C210002F355 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4FA571F420402CD10002F355 /* ChatMessage.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatMessage.pb.swift; path = ../../../../../../protobuf/ChatMessage.pb.swift; sourceTree = "<group>"; };
+		4FA571F720402DF50002F355 /* ChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatManager.swift; sourceTree = "<group>"; };
 		B18111977EBF3BE019EFC4B8 /* Pods-BubblyChatClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BubblyChatClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-BubblyChatClient/Pods-BubblyChatClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,11 +104,12 @@
 		4F97EB2A203F23D500F0559F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4F97EB2E203F24FE00F0559F /* Extensions */,
+				4FA571F620402DD30002F355 /* Managers */,
 				4F97EB30203F251900F0559F /* Model */,
 				4F97EB2F203F251200F0559F /* Network */,
-				4F97EB2E203F24FE00F0559F /* Extensions */,
-				4F97EB2D203F24F800F0559F /* Utilities */,
 				4F97EB2B203F243600F0559F /* Screens */,
+				4F97EB2D203F24F800F0559F /* Utilities */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -230,6 +233,14 @@
 				4FA571F420402CD10002F355 /* ChatMessage.pb.swift */,
 			);
 			path = Protobuf;
+			sourceTree = "<group>";
+		};
+		4FA571F620402DD30002F355 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4FA571F720402DF50002F355 /* ChatManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		7512BE0232391B8573F2690D /* Pods */ = {
@@ -380,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA571A2203F2BB50002F355 /* LoginViewController.swift in Sources */,
+				4FA571F820402DF50002F355 /* ChatManager.swift in Sources */,
 				4F97EB19203F239800F0559F /* AppDelegate.swift in Sources */,
 				4FA571A7203F2C210002F355 /* LoginViewModel.swift in Sources */,
 				4FA571A4203F2BE00002F355 /* AppUtilities.swift in Sources */,
