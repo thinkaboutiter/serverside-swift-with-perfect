@@ -8,6 +8,7 @@ def obtain_pods
   pod 'SnapKit', '~> 4.0'
   pod 'TPKeyboardAvoiding', '~> 1.3'
   pod 'Starscream', '~> 3.0'
+  pod 'SwiftProtobuf', '~> 1.0'
 
 end
 
