@@ -1314,7 +1314,7 @@
 		"PerfectMongoDB::PerfectMongoDB::Product" /* PerfectMongoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectMongoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PerfectNet::PerfectNet::Product" /* PerfectNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PerfectThread::PerfectThread::Product" /* PerfectThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ShoppingList::ShoppingList::Product" /* ShoppingList */ = {isa = PBXFileReference; lastKnownFileType = text; path = ShoppingList; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ShoppingList::ShoppingList::Product" /* ShoppingList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ShoppingList; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SimpleLogger::SimpleLogger::Product" /* SimpleLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimpleLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"StORM::StORM::Product" /* StORM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StORM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftMoment::SwiftMoment::Product" /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2142,7 +2142,7 @@
 			path = ".build/checkouts/Perfect-CZlib-src.git--8503750424862953877/PerfectCZlib";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -2151,7 +2151,6 @@
 				OBJ_12 /* Dependencies */,
 				OBJ_422 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_62 /* include */ = {
@@ -2902,6 +2901,35 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"MongoDBStORM::MongoDBStORM" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectCURL::PerfectCURL" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectHTTP::PerfectHTTP" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectLogger::PerfectLogger" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectThread::PerfectThread" = {
+						LastSwiftMigration = 0940;
+					};
+					"ShoppingList::ShoppingList" = {
+						LastSwiftMigration = 0940;
+					};
+					"StORM::StORM" = {
+						LastSwiftMigration = 0940;
+					};
+					"SwiftMoment::SwiftMoment" = {
+						LastSwiftMigration = 0940;
+					};
+					"SwiftString::SwiftString" = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ShoppingList" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2910,7 +2938,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_422 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -3984,7 +4012,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libbson-1.0 -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libbson-1.0 -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-CZlib-src.git--8503750424862953877/PerfectCZlib/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectCHTTPParser/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = ShoppingList;
 			};
 			name = Debug;
@@ -4026,7 +4055,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libbson-1.0 -I/usr/local/Cellar/mongo-c-driver/1.12.0/include/libbson-1.0 -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-CZlib-src.git--8503750424862953877/PerfectCZlib/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectCHTTPParser/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = ShoppingList;
 			};
 			name = Release;
@@ -4387,6 +4417,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -4407,6 +4438,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
