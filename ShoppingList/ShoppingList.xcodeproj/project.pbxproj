@@ -1244,7 +1244,7 @@
 		"PerfectMongoDB::PerfectMongoDB::Product" /* PerfectMongoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectMongoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PerfectNet::PerfectNet::Product" /* PerfectNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"PerfectThread::PerfectThread::Product" /* PerfectThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ShoppingList::ShoppingList::Product" /* ShoppingList */ = {isa = PBXFileReference; lastKnownFileType = text; path = ShoppingList; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ShoppingList::ShoppingList::Product" /* ShoppingList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = ShoppingList; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SimpleLogger::SimpleLogger::Product" /* SimpleLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SimpleLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"StORM::StORM::Product" /* StORM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = StORM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftRandom::SwiftRandom::Product" /* SwiftRandom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftRandom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2697,6 +2697,38 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"MongoDBStORM::MongoDBStORM" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectCURL::PerfectCURL" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectHTTP::PerfectHTTP" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectLib::PerfectLib" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectLogger::PerfectLogger" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectNet::PerfectNet" = {
+						LastSwiftMigration = 0940;
+					};
+					"PerfectThread::PerfectThread" = {
+						LastSwiftMigration = 0940;
+					};
+					"ShoppingList::ShoppingList" = {
+						LastSwiftMigration = 0940;
+					};
+					"StORM::StORM" = {
+						LastSwiftMigration = 0940;
+					};
+					"SwiftRandom::SwiftRandom" = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "ShoppingList" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -4937,7 +4969,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libbson-1.0 -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libbson-1.0 -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-CZlib-src.git--8503750424862953877/PerfectCZlib/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectCHTTPParser/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = ShoppingList;
 			};
 			name = Debug;
@@ -4986,7 +5019,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libbson-1.0 -I/usr/local/Cellar/mongo-c-driver/1.9.2/include/libbson-1.0 -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-CZlib-src.git--8503750424862953877/PerfectCZlib/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectCHTTPParser/include/module.modulemap -Xcc -fmodule-map-file=$(SRCROOT)/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = ShoppingList;
 			};
 			name = Release;
