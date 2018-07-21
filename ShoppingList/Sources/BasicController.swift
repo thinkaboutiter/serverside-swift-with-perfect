@@ -25,7 +25,7 @@ final class BasicController {
     func test(request: HTTPRequest, response: HTTPResponse) {
         do {
             let result: [String: Any] = [
-                "status": "Test successful"
+                "status": "Test successful."
             ]
             let json: String = try result.jsonEncodedString()
             response.setBody(string: json)
