@@ -15,8 +15,8 @@ final class BasicController {
     // MARK: - Properties
     var routes: [Route] {
         return [
-//            Route(method: .get, uri: "/all", handler: all),
-//            Route(method: .post, uri: "/shoppingItem", handler: create)
+            Route(method: .get, uri: "/all", handler: all),
+            Route(method: .post, uri: "/shoppingItem", handler: create),
             Route(method: .get, uri: "/test", handler: test)
         ]
     }
@@ -25,7 +25,7 @@ final class BasicController {
     func test(request: HTTPRequest, response: HTTPResponse) {
         do {
             let result: [String: Any] = [
-                "status": "Hello world"
+                "status": "Test successful."
             ]
             let json: String = try result.jsonEncodedString()
             response.setBody(string: json)
