@@ -15,19 +15,37 @@ final class BasicController {
     // MARK: - Properties
     var routes: [Route] {
         return [
-            Route(method: .get, uri: "/all", handler: all),
-            Route(method: .post, uri: "/shoppingItem", handler: create)
+//            Route(method: .get, uri: "/all", handler: all),
+//            Route(method: .post, uri: "/shoppingItem", handler: create)
+            Route(method: .get, uri: "/test", handler: test)
         ]
     }
     
     // MARK: - Life cycle
+    func test(request: HTTPRequest, response: HTTPResponse) {
+        do {
+            let result: [String: Any] = [
+                "status": "Hello world"
+            ]
+            let json: String = try result.jsonEncodedString()
+            response.setBody(string: json)
+                .setHeader(.contentType, value: "application/json")
+                .completed()
+        }
+        catch {
+            response.setBody(string: "Error handling request: \(error)")
+                .completed(status: .internalServerError)
+        }
+    }
+    
     func all(request: HTTPRequest, response: HTTPResponse) {
         do {
             let json: String = try ShoppingItem.allAsString()
             response.setBody(string: json)
                 .setHeader(.contentType, value: "application/json")
                 .completed()
-        } catch {
+        }
+        catch {
             response.setBody(string: "Error handling request: \(error)")
                 .completed(status: .internalServerError)
         }
@@ -39,7 +57,8 @@ final class BasicController {
             response.setBody(string: json)
                 .setHeader(.contentType, value: "application/json")
                 .completed()
-        } catch {
+        }
+        catch {
             response.setBody(string: "Error handling request: \(error)")
                 .completed(status: .internalServerError)
         }
