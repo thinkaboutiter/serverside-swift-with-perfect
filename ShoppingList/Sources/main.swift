@@ -11,7 +11,6 @@ MongoDBConnection.database = "ShoppingList"
 // MARK: - Setup server
 let server = HTTPServer()
 server.serverPort = 8080
-server.serverAddress = "80.211.17.247"
 
 // MARK: - Routes
 let basic = BasicController()
