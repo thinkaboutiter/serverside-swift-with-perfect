@@ -14,65 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectHTTP::PerfectHTTP"
-               BuildableName = "PerfectHTTP.framework"
-               BlueprintName = "PerfectHTTP"
-               ReferencedContainer = "container:ShoppingList.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftString::SwiftString"
-               BuildableName = "SwiftString.framework"
-               BlueprintName = "SwiftString"
-               ReferencedContainer = "container:ShoppingList.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectLogger::PerfectLogger"
-               BuildableName = "PerfectLogger.framework"
-               BlueprintName = "PerfectLogger"
-               ReferencedContainer = "container:ShoppingList.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftRandom::SwiftRandom"
-               BuildableName = "SwiftRandom.framework"
-               BlueprintName = "SwiftRandom"
-               ReferencedContainer = "container:ShoppingList.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "COpenSSL::COpenSSL"
-               BuildableName = "COpenSSL.framework"
-               BlueprintName = "COpenSSL"
+               BlueprintIdentifier = "ShoppingList::ShoppingList"
+               BuildableName = "ShoppingList"
+               BlueprintName = "ShoppingList"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -98,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectNet::PerfectNet"
-               BuildableName = "PerfectNet.framework"
-               BlueprintName = "PerfectNet"
+               BlueprintIdentifier = "PerfectCZlib::PerfectCZlib"
+               BuildableName = "PerfectCZlib.framework"
+               BlueprintName = "PerfectCZlib"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -126,9 +70,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SwiftMoment::SwiftMoment"
-               BuildableName = "SwiftMoment.framework"
-               BlueprintName = "SwiftMoment"
+               BlueprintIdentifier = "PerfectCrypto::PerfectCrypto"
+               BuildableName = "PerfectCrypto.framework"
+               BlueprintName = "PerfectCrypto"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -140,9 +84,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectHTTPServer::PerfectCHTTPParser"
-               BuildableName = "PerfectCHTTPParser.framework"
-               BlueprintName = "PerfectCHTTPParser"
+               BlueprintIdentifier = "PerfectLogger::PerfectLogger"
+               BuildableName = "PerfectLogger.framework"
+               BlueprintName = "PerfectLogger"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -154,9 +98,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "MongoDBStORM::MongoDBStORM"
-               BuildableName = "MongoDBStORM.framework"
-               BlueprintName = "MongoDBStORM"
+               BlueprintIdentifier = "COpenSSL::COpenSSL"
+               BuildableName = "COpenSSL.framework"
+               BlueprintName = "COpenSSL"
+               ReferencedContainer = "container:ShoppingList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftRandom::SwiftRandom"
+               BuildableName = "SwiftRandom.framework"
+               BlueprintName = "SwiftRandom"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -182,6 +140,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PerfectHTTP::PerfectHTTP"
+               BuildableName = "PerfectHTTP.framework"
+               BlueprintName = "PerfectHTTP"
+               ReferencedContainer = "container:ShoppingList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "PerfectNet::PerfectNet"
+               BuildableName = "PerfectNet.framework"
+               BlueprintName = "PerfectNet"
+               ReferencedContainer = "container:ShoppingList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "PerfectThread::PerfectThread"
                BuildableName = "PerfectThread.framework"
                BlueprintName = "PerfectThread"
@@ -196,9 +182,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ShoppingList::ShoppingList"
-               BuildableName = "ShoppingList"
-               BlueprintName = "ShoppingList"
+               BlueprintIdentifier = "PerfectHTTPServer::PerfectCHTTPParser"
+               BuildableName = "PerfectCHTTPParser.framework"
+               BlueprintName = "PerfectCHTTPParser"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -210,23 +196,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "StORM::StORM"
-               BuildableName = "StORM.framework"
-               BlueprintName = "StORM"
-               ReferencedContainer = "container:ShoppingList.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectCZlib::PerfectCZlib"
-               BuildableName = "PerfectCZlib.framework"
-               BlueprintName = "PerfectCZlib"
+               BlueprintIdentifier = "SwiftMoment::SwiftMoment"
+               BuildableName = "SwiftMoment.framework"
+               BlueprintName = "SwiftMoment"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -252,9 +224,37 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "PerfectCrypto::PerfectCrypto"
-               BuildableName = "PerfectCrypto.framework"
-               BlueprintName = "PerfectCrypto"
+               BlueprintIdentifier = "SwiftString::SwiftString"
+               BuildableName = "SwiftString.framework"
+               BlueprintName = "SwiftString"
+               ReferencedContainer = "container:ShoppingList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "MongoDBStORM::MongoDBStORM"
+               BuildableName = "MongoDBStORM.framework"
+               BlueprintName = "MongoDBStORM"
+               ReferencedContainer = "container:ShoppingList.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "StORM::StORM"
+               BuildableName = "StORM.framework"
+               BlueprintName = "StORM"
                ReferencedContainer = "container:ShoppingList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -283,9 +283,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "PerfectHTTP::PerfectHTTP"
-            BuildableName = "PerfectHTTP.framework"
-            BlueprintName = "PerfectHTTP"
+            BlueprintIdentifier = "ShoppingList::ShoppingList"
+            BuildableName = "ShoppingList"
+            BlueprintName = "ShoppingList"
             ReferencedContainer = "container:ShoppingList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
