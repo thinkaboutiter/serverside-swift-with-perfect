@@ -1,5 +1,5 @@
 FROM ibmcom/swift-ubuntu:latest
-LABEL Description="Shopping list sample app"
+LABEL Description="Shopping list, a sample app in swift."
 
 # Get extra dependencies for Perfect
 RUN apt-get update && apt-get install -y \
