@@ -11,13 +11,15 @@ uuid-dev
 EXPOSE 8080
 
 # Copy sources
-RUN mkdir /root/ShoppingList
-RUN mkdir /root/ShoppingList/Sources
-ADD main.swift /root/ShoppingList/Sources
-ADD Package.swift /root/ShoppingList
+WORKDIR /root/ShoppingList/Sources
+COPY /Sources/* . 
+
+WORKDIR /root/ShoppingList
+COPY Package.swift .
+
 
 # Build the app
-RUN cd /root/ShoppingList && swift build
+RUN swift build
 
 # Run the app
 USER root
