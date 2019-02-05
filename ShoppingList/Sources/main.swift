@@ -5,8 +5,8 @@ import StORM
 import MongoDBStORM
 
 // MARK: - Setup DB connection
-MongoDBConnection.host = "127.0.0.1"
-MongoDBConnection.database = "ShoppingList"
+// MongoDBConnection.host = "127.0.0.1"
+// MongoDBConnection.database = "ShoppingList"
 
 // MARK: - Setup server
 let server = HTTPServer()

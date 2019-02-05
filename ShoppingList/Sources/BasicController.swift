@@ -15,9 +15,9 @@ final class BasicController {
     // MARK: - Properties
     var routes: [Route] {
         return [
-            Route(method: .get, uri: "/all", handler: all),
-            Route(method: .post, uri: "/shoppingItem", handler: create),
-            Route(method: .get, uri: "/test", handler: test)
+            // Route(method: .get, uri: "/all", handler: all),
+            // Route(method: .post, uri: "/shoppingItem", handler: create),
+            Route(method: .get, uri: "/test", handler: test),
         ]
     }
     
