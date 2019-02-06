@@ -5,7 +5,8 @@ LABEL Description="Shopping list, a sample app in swift."
 RUN apt-get update && apt-get install -y \
 openssl \
 libssl-dev \
-uuid-dev
+uuid-dev \
+tree
 
 # Expose default port for App Engine
 EXPOSE 8080
@@ -13,10 +14,6 @@ EXPOSE 8080
 # Copy sources
 WORKDIR /root/ShoppingList/Sources
 COPY Sources/ .
-
-# Copy tests
-WORKDIR /root/ShoppingList/Tests
-COPY Tests/ .
 
 WORKDIR /root/ShoppingList
 COPY Package.swift .
@@ -26,4 +23,4 @@ RUN swift build
 
 # Run the app
 USER root
-CMD ["/root/ShoppingList/.build_lin/debug/ShoppingList"]
+CMD ["swift", "run"]
