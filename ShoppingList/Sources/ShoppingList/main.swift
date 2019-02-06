@@ -5,8 +5,10 @@ import PerfectHTTPServer
  import MongoDBStORM
 
 // MARK: - Setup DB connection
- MongoDBConnection.host = "127.0.0.1"
- MongoDBConnection.database = "ShoppingList"
+MongoDBConnection.host = "127.0.0.1"
+MongoDBConnection.database = "ShoppingList"
+MongoDBConnection.username = "root"
+MongoDBConnection.password = "example"
 
 // MARK: - Setup server
 let server = HTTPServer()
