@@ -1,4 +1,4 @@
-FROM ibmcom/swift-ubuntu:latest
+FROM boyankov/swift:swift-4.2-ubuntu-16.04
 LABEL Description="Shopping list, a sample app in swift."
 
 # Get extra dependencies for Perfect
@@ -19,7 +19,8 @@ WORKDIR /root/ShoppingList
 COPY Package.swift .
 
 # Release build
-RUN swift build -c release -Xswiftc -static-stdlib
+# RUN swift build -c release -Xswiftc -static-stdlib
+RUN swift build
 
 # Run the app
 USER root
