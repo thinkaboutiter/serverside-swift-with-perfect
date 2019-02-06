@@ -4,7 +4,7 @@
 //
 //  Created by boyankov on W08 21/Feb/2018 Wed.
 //
-
+/*
 import Foundation
 import StORM
 import MongoDBStORM
@@ -146,3 +146,4 @@ extension ShoppingItem {
     
     // TODO: implement me
 }
+*/
