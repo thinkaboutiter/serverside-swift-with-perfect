@@ -18,8 +18,8 @@ COPY Sources/ .
 WORKDIR /root/ShoppingList
 COPY Package.swift .
 
-# Build the app
-RUN swift build
+# Release build
+RUN swift build -c release -Xswiftc -static-stdlib
 
 # Run the app
 USER root
