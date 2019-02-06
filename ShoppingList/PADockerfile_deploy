@@ -1,4 +1,0 @@
-FROM perfectassistant/shoppinglist:latest
-COPY .build_lin/release/ShoppingList /perfect-deployed/shoppinglist/
-RUN rm -rf /var/lib/apt/lists/*
-CMD cd /perfect-deployed/shoppinglist/ && ./ShoppingList

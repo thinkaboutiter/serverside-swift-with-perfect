@@ -1,12 +1,12 @@
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
-import StORM
-import MongoDBStORM
+// import StORM
+// import MongoDBStORM
 
 // MARK: - Setup DB connection
-MongoDBConnection.host = "127.0.0.1"
-MongoDBConnection.database = "ShoppingList"
+// MongoDBConnection.host = "127.0.0.1"
+// MongoDBConnection.database = "ShoppingList"
 
 // MARK: - Setup server
 let server = HTTPServer()
@@ -22,4 +22,3 @@ do {
 } catch PerfectError.networkError(let err, let msg) {
     print("Network error thrown: \(err) \(msg)")
 }
-

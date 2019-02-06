@@ -1,24 +1,27 @@
-FROM ibmcom/swift-ubuntu:latest
-LABEL Description="Shopping list sample app"
+FROM boyankov/swift:swift-4.2-ubuntu-16.04
+LABEL Description="Shopping list, a sample app in swift."
 
 # Get extra dependencies for Perfect
 RUN apt-get update && apt-get install -y \
 openssl \
 libssl-dev \
-uuid-dev
+uuid-dev \
+tree
 
 # Expose default port for App Engine
 EXPOSE 8080
 
 # Copy sources
-RUN mkdir /root/ShoppingList
-RUN mkdir /root/ShoppingList/Sources
-ADD main.swift /root/ShoppingList/Sources
-ADD Package.swift /root/ShoppingList
+WORKDIR /root/ShoppingList/Sources
+COPY Sources/ .
 
-# Build the app
-RUN cd /root/ShoppingList && swift build
+WORKDIR /root/ShoppingList
+COPY Package.swift .
+
+# Release build
+# RUN swift build -c release -Xswiftc -static-stdlib
+RUN swift build
 
 # Run the app
 USER root
-CMD ["/root/ShoppingList/.build_lin/debug/ShoppingList"]
+CMD ["swift", "run"]
