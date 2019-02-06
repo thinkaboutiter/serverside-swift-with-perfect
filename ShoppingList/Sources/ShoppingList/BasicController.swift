@@ -9,6 +9,7 @@ import Foundation
 import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
+import SimpleLogger
 
 final class BasicController {
     
@@ -17,15 +18,27 @@ final class BasicController {
         return [
             // Route(method: .get, uri: "/all", handler: all),
             // Route(method: .post, uri: "/shoppingItem", handler: create),
-            Route(method: .get, uri: "/test", handler: test),
+            Route(method: .get, uri: "/", handler: test),
         ]
     }
     
     // MARK: - Life cycle
     func test(request: HTTPRequest, response: HTTPResponse) {
+        let message: String = """
+        ------------------
+        received request:
+        method=\(request.method)
+        path=\(request.path)
+        queryParams=\(request.queryParams)
+        remote=\(request.remoteAddress.host):\(request.remoteAddress.port)
+        ------------------
+        """
+        Logger.network.message().object(message)
+        
         do {
             let result: [String: Any] = [
-                "status": "Test successful."
+                "status": "Ok",
+                "message": "Hello world"
             ]
             let json: String = try result.jsonEncodedString()
             response.setBody(string: json)
