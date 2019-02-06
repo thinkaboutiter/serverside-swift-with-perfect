@@ -12,15 +12,14 @@ EXPOSE 8080
 
 # Copy sources
 WORKDIR /root/ShoppingList/Sources
-COPY /Sources/* / 
+COPY Sources/ .
 
 # Copy tests
 WORKDIR /root/ShoppingList/Tests
-COPY /Tests/* /
+COPY Tests/ .
 
 WORKDIR /root/ShoppingList
 COPY Package.swift .
-
 
 # Build the app
 RUN swift build
