@@ -13,10 +13,7 @@ services:
       - backend
   
   mongo:
-    image: mongo:4-xenail-custom
-    build:
-      context: .
-      dockerfile: mongo.Dockerfile
+    image: mongo:4-xenial
     networks: 
       - backend
     volumes: 
