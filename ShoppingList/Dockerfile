@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
 openssl \
 libssl-dev \
 uuid-dev \
+libmongoc-dev \
+libbson-dev \
 tree
 
 # Expose default port for App Engine
