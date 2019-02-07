@@ -4,7 +4,7 @@
 //
 //  Created by boyankov on W08 21/Feb/2018 Wed.
 //
-/*
+
 import Foundation
 import StORM
 import MongoDBStORM
@@ -16,7 +16,7 @@ class ShoppingItem: MongoDBStORM {
     // NOTE: First param in class should be the ID.
     var id: String = ""
     var name: String = ""
-    var quantity: UInt64 = 0
+    var quantity: Int = 0
     var isBought: Bool = false
     
     // MARK: - Initiailization
@@ -32,7 +32,7 @@ class ShoppingItem: MongoDBStORM {
     override func to(_ this: StORMRow) {
         self.id = this.data["_id"] as? String ?? ""
         self.name = this.data["name"] as? String ?? ""
-        self.quantity = this.data["quantity"] as? UInt64 ?? 0
+        self.quantity = this.data["quantity"] as? Int ?? 0
         self.isBought = this.data["isBought"] as? Bool ?? false
     }
     
@@ -76,10 +76,10 @@ extension ShoppingItem {
             return "Unable to obtain `isBought`"
         }
         
-        return try create(withName: valid_name, quantity: UInt64(valid_quantity), isBought: valid_isBought).jsonEncodedString()
+        return try create(withName: valid_name, quantity: valid_quantity, isBought: valid_isBought).jsonEncodedString()
     }
     
-    static func create(withName name: String, quantity: UInt64, isBought: Bool) throws -> [String: Any] {
+    static func create(withName name: String, quantity: Int, isBought: Bool) throws -> [String: Any] {
         let shoppingItem: ShoppingItem = ShoppingItem()
         shoppingItem.id = shoppingItem.newObjectId()
         shoppingItem.name = name
@@ -146,4 +146,3 @@ extension ShoppingItem {
     
     // TODO: implement me
 }
-*/

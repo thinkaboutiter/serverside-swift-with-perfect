@@ -1,0 +1,30 @@
+version: "3.7"
+
+services: 
+
+  shopping-list:
+    image: shopping-list:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:8080
+    networks:
+      - backend
+  
+  mongo:
+    image: mongo:local
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
+    networks: 
+      - backend
+    volumes: 
+      - mongo-data:/etc/mongo
+      
+volumes: 
+  mongo-data:
+
+networks: 
+  backend:
+    
