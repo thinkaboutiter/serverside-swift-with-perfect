@@ -5,7 +5,8 @@ import PerfectHTTPServer
  import MongoDBStORM
 
 // MARK: - Setup DB connection
-MongoDBConnection.host = "mongo:5959"
+MongoDBConnection.host = "mongo"
+MongoDBConnection.port = 5959
 MongoDBConnection.database = "ShoppingList"
 
 // MARK: - Setup server
