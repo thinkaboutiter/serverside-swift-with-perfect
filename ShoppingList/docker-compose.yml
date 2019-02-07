@@ -14,6 +14,9 @@ services:
   
   mongo:
     image: mongo:local
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
     networks: 
       - backend
     volumes: 
