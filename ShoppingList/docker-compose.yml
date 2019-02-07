@@ -3,7 +3,7 @@ version: "3.7"
 services: 
 
   shopping-list:
-    image: shopping-list-mongo-db
+    image: shopping-list:mongo-4-xenial
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,7 +13,10 @@ services:
       - backend
   
   mongo:
-    image: mongo:4-xenial
+    image: mongo:4-xenail-custom
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
     networks: 
       - backend
     volumes: 
