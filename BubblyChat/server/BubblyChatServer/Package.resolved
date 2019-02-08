@@ -1,0 +1,187 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "COpenSSL",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-COpenSSL.git",
+        "state": {
+          "branch": null,
+          "revision": "6a2aafd5e233051deeaba27bdfe8c12d9fa88886",
+          "version": "3.1.3"
+        }
+      },
+      {
+        "package": "MongoDBStORM",
+        "repositoryURL": "https://github.com/SwiftORM/MongoDB-StORM.git",
+        "state": {
+          "branch": null,
+          "revision": "87db49cbd0046496f149907c5ce8fb057624f2e4",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "PerfectCBSON",
+        "repositoryURL": "https://github.com/PerfectSideRepos/Perfect-CBSON.git",
+        "state": {
+          "branch": null,
+          "revision": "284580ca67c25ff11987e94b30af99463a11e7bb",
+          "version": "0.0.4"
+        }
+      },
+      {
+        "package": "PerfectCMongo",
+        "repositoryURL": "https://github.com/PerfectSideRepos/Perfect-CMongo.git",
+        "state": {
+          "branch": null,
+          "revision": "ea0b1508c37c544d0ed4dcf936805d3ff5bae278",
+          "version": "0.0.4"
+        }
+      },
+      {
+        "package": "PerfectCURL",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-CURL.git",
+        "state": {
+          "branch": null,
+          "revision": "3df2178ebd89330926ef523131101d2edebf8daf",
+          "version": "3.0.2"
+        }
+      },
+      {
+        "package": "PerfectCZlib",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-CZlib-src.git",
+        "state": {
+          "branch": null,
+          "revision": "b63e46909aad937c6434766f8f8c6720d8f3bd05",
+          "version": "0.0.4"
+        }
+      },
+      {
+        "package": "PerfectCrypto",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Crypto.git",
+        "state": {
+          "branch": null,
+          "revision": "a0565cd234faee0167f5f0540ad71516efc11a0b",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "PerfectHTTP",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-HTTP.git",
+        "state": {
+          "branch": null,
+          "revision": "de33aeb1730ff73da833e0c2b6eabf4c5cbae396",
+          "version": "3.0.7"
+        }
+      },
+      {
+        "package": "PerfectHTTPServer",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-HTTPServer.git",
+        "state": {
+          "branch": null,
+          "revision": "7e04dc4c8ad73bbe779cd6f97ceddb5bacf6b7d3",
+          "version": "3.0.5"
+        }
+      },
+      {
+        "package": "PerfectLib",
+        "repositoryURL": "https://github.com/PerfectlySoft/PerfectLib.git",
+        "state": {
+          "branch": null,
+          "revision": "0ab139ad6001ad4c3bb1b9714f11168a74af8e79",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "PerfectLogger",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Logger.git",
+        "state": {
+          "branch": null,
+          "revision": "2f1baef51d316d8bc1d919e6d89f55be6b3f914c",
+          "version": "3.0.5"
+        }
+      },
+      {
+        "package": "PerfectMongoDB",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-MongoDB.git",
+        "state": {
+          "branch": null,
+          "revision": "121d094951217a5dc6d250dc35a9fd805a0b0156",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "PerfectNet",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Net.git",
+        "state": {
+          "branch": null,
+          "revision": "5e137023e0373b3bdd46a5c80c3ec868fd1c383d",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "PerfectThread",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-Thread.git",
+        "state": {
+          "branch": null,
+          "revision": "1846390a47bfe0c5263bb70ba318b2bbe751ac95",
+          "version": "3.0.2"
+        }
+      },
+      {
+        "package": "PerfectWebSockets",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-WebSockets.git",
+        "state": {
+          "branch": null,
+          "revision": "f8d5c6e0d7fb630b75fcf41de9545211fb699641",
+          "version": "3.0.1"
+        }
+      },
+      {
+        "package": "SimpleLogger",
+        "repositoryURL": "https://github.com/thinkaboutiter/SimpleLogger.git",
+        "state": {
+          "branch": null,
+          "revision": "a2e658acd2cf2900c5f13ddec86a950c9fb43d4f",
+          "version": "1.2.1"
+        }
+      },
+      {
+        "package": "StORM",
+        "repositoryURL": "https://github.com/SwiftORM/StORM.git",
+        "state": {
+          "branch": null,
+          "revision": "54741705b76744bb83b8e43cd2bd4804e7f5bed1",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "SwiftProtobuf",
+        "repositoryURL": "https://github.com/apple/swift-protobuf.git",
+        "state": {
+          "branch": null,
+          "revision": "9dea0a4e64f9c3eb73db3308e7302f45cd8380b2",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "SwiftRandom",
+        "repositoryURL": "https://github.com/iamjono/SwiftRandom.git",
+        "state": {
+          "branch": null,
+          "revision": "fe3205f67aa6e8574acc08e9d7cd1fdcaecf49f1",
+          "version": "0.2.5"
+        }
+      },
+      {
+        "package": "cURL",
+        "repositoryURL": "https://github.com/PerfectlySoft/Perfect-libcurl.git",
+        "state": {
+          "branch": null,
+          "revision": "672f6695d9ae04fce16ad01decef0649e0b872b0",
+          "version": "2.0.6"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

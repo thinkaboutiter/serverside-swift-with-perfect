@@ -1,0 +1,31 @@
+version: "3.7"
+
+# Note:
+# - Use this file to deploy on swarm.
+# - Mongo DB is persisted on node with name `node1` so if your names are different
+# you need to change it.
+
+services: 
+
+  shopping-list:
+    image: boyankov/shopping-list:mongo-4-xenial
+    ports:
+      - 80:8080
+    networks:
+      - backend
+  
+  mongo:
+    image: boyankov/mongo:4-xenial-shopping-list-app
+    networks: 
+      - backend
+    volumes: 
+      - mongo-data:/data/db
+    deploy:
+      placement:
+        constraints: [node.hostname == node1]
+      
+volumes: 
+  mongo-data:
+
+networks: 
+  backend:

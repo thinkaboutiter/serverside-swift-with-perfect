@@ -1,0 +1,8 @@
+.DS_Store
+/.build
+/.build_lin
+/Packages
+# we want to see IDE changes!
+# /*.xcodeproj
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
