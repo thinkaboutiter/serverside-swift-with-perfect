@@ -1,5 +1,10 @@
 version: "3.7"
 
+# Note:
+# - Use this file to deploy on swarm.
+# - Mongo DB is persisted on node with name `node1` so if your names are different
+# you need to change it.
+
 services: 
 
   shopping-list:
@@ -14,13 +19,13 @@ services:
     networks: 
       - backend
     volumes: 
-      - mongo-data:/etc/mongo
+      - mongo-data:/data/db
+    deploy:
+      placement:
+        constraints: [node.hostname == node1]
       
 volumes: 
   mongo-data:
 
 networks: 
   backend:
-    
-# Note:
-# Use this file to deploy on swarm
